@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
     var registroForm = document.getElementById("registroForm");
+    
     if(registroForm) {
         registroForm.addEventListener("submit", function (event) {
             event.preventDefault();
