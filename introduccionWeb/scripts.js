@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var password = document.getElementById("password").value;
             // Verificación de usuario y contraseña
             if (username === "admin" && password === "1234") {
-                window.location.href "dashboard.html";
+                window.location.href = "dashboard.html";
             } else {
                 alert("Usuario o contraseña incorrectos");
             }
