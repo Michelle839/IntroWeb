@@ -1,4 +1,4 @@
-body {
+css body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
@@ -27,7 +27,7 @@ label {
     margin-top: 10px;
 }
 
-Input {
+input {
     padding: 10px;
     margin-top: 5px;
 }
@@ -56,4 +56,45 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.contenido {
+    display: none;
+}
+
+.contenido.active {
+    display: block;
 }

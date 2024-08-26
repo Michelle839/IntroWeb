@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     var registroForm = document.getElementById("registroForm");
-    
-    if(registroForm) {
+
+    if (registroForm) {
         registroForm.addEventListener("submit", function (event) {
             event.preventDefault();
             var newUser = document.getElementById("newUser").value;
@@ -41,4 +41,20 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "index.html";
         });
     }
+});
+
+var linkEstudiantes = document.getElementById("linkEstudiantes");
+var linkAsignaturas = document.getElementById("linkAsignaturas");
+var contenedorEstudiantes = document.getElementById("contenedor Estudiantes");
+var contenedorAsignaturas = document.getElementById("contenedorAsignaturas");
+
+linkEstudiantes.addEventListener("click", function (event) {
+    event.preventDefault();
+    contenedorEstudiantes.classList.add("active");
+    contenedorAsignaturas.classList.remove("active");
+});
+linkAsignaturas.addEventListener("click", function (event) {
+    event.preventDefault();
+    contenedorAsignaturas.classList.add("active");
+    contenedorEstudiantes.classList.remove("active");
 });
